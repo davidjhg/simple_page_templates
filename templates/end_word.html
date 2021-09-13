@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Index</title>
+</head>
+<body>
+
+
+{% if username %}
+    <p>사용자 이름: {{ username }}</p>
+{% endif %}
+
+{% if comment %}
+    <p>{{ comment }}</p>
+{% endif %}
+
+<li><a href="/index?username={{ username }}">메인페이지 이동</a></li>
+
+
+
+</body>
+</html>
